@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Luxury Face Cream",
+    "category": "face",
+    "price": 45.99,
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500",
+    "description": "Premium anti-aging face cream with natural ingredients",
+    "ingredients": ["Retinol", "Hyaluronic Acid", "Vitamin C"],
+    "rating": 4.8,
+    "reviews": 324
+  },
+  {
+    "id": 2,
+    "name": "Body Moisturizer Lotion",
+    "category": "body",
+    "price": 32.99,
+    "image": "https://images.unsplash.com/photo-1570194065650-66ef6e1b4d0f?w=500",
+    "description": "Hydrating body lotion for soft, smooth skin",
+    "ingredients": ["Shea Butter", "Aloe Vera", "Jojoba Oil"],
+    "rating": 4.6,
+    "reviews": 256
+  },
+  {
+    "id": 3,
+    "name": "Night Repair Cream",
+    "category": "face",
+    "price": 52.99,
+    "image": "https://images.unsplash.com/photo-1596289519410-fea930fa52e0?w=500",
+    "description": "Intensive night cream for deep skin renewal",
+    "ingredients": ["Peptides", "Night Bloom Extract", "Deep Sea Minerals"],
+    "rating": 4.9,
+    "reviews": 412
+  },
+  {
+    "id": 4,
+    "name": "Body Butter Deluxe",
+    "category": "body",
+    "price": 38.99,
+    "image": "https://images.unsplash.com/photo-1599599810694-b5ac4dd57e2c?w=500",
+    "description": "Rich body butter with luxurious feel",
+    "ingredients": ["Cocoa Butter", "Vitamin E", "Lavender Oil"],
+    "rating": 4.7,
+    "reviews": 189
+  },
+  {
+    "id": 5,
+    "name": "Sensitive Skin Cream",
+    "category": "face",
+    "price": 48.99,
+    "image": "https://images.unsplash.com/photo-1520763185298-1b434c919eba?w=500",
+    "description": "Gentle formula for sensitive skin types",
+    "ingredients": ["Chamomile", "Allantoin", "Panthenol"],
+    "rating": 4.5,
+    "reviews": 267
+  },
+  {
+    "id": 6,
+    "name": "Hydration Boosting Serum",
+    "category": "face",
+    "price": 58.99,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500",
+    "description": "Intensive hydration serum for plump skin",
+    "ingredients": ["Hyaluronic Acid", "Glycerin", "Rose Water"],
+    "rating": 4.8,
+    "reviews": 334
+  }
+]

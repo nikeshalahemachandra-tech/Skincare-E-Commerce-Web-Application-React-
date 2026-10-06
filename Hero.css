@@ -1,0 +1,199 @@
+/* ========================================
+   HERO.CSS - COMPLETE STYLING
+   ======================================== */
+
+/* Main Hero Section */
+.hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Hero Slide Container */
+.hero-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark Overlay on Hero */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.hero-overlay:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Hero Content Container */
+.hero-content {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+  background: #b36314;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(212, 163, 115, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-btn:hover {
+  background: #b36314;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(212, 163, 115, 0.5);
+}
+
+.cta-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(212, 163, 115, 0.4);
+}
+
+/* Slide Indicators Container */
+.slide-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+/* Individual Indicator Dot */
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+/* Active Indicator Dot */
+.indicator.active {
+  background: #b36314;
+  border-color: #b36314;
+  width: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(212, 163, 115, 0.4);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .slide-indicators {
+    bottom: 1rem;
+  }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .slide-indicators {
+    bottom: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  .indicator.active {
+    width: 25px;
+  }
+}

@@ -1,0 +1,241 @@
+/* ========================================
+   FOOTER.CSS - COMPLETE STYLING
+   ======================================== */
+
+/* Main Footer Container */
+.footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: auto;
+}
+
+/* Footer Content Grid */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Footer Section */
+.footer-section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Footer Section Heading (H3) */
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #d4a373;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Footer Section Subheading (H4) */
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: #d4a373;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Footer Section Text */
+.footer-section p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* Footer List */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List Items */
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* Footer Links */
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.footer-section a:hover {
+  color: #d4a373;
+  transform: translateX(5px);
+}
+
+/* Social Media Links Container */
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual Social Link */
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d4a373;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  background: #d4a373;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #999;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ========== LINK ANIMATIONS ========== */
+
+/* Link with Underline Animation */
+.footer-section a {
+  position: relative;
+}
+
+.footer-section a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4a373;
+  transition: width 0.3s ease;
+}
+
+.footer-section a:hover::after {
+  width: 100%;
+}
+
+/* ========== ANIMATIONS ========== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger Animation for Sections */
+.footer-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.footer-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.footer-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.footer-section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section p {
+    font-size: 0.85rem;
+  }
+
+  .footer-section a:hover {
+    transform: translateX(0);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,251 @@
+/* ========================================
+   PRODUCTCARD.CSS - COMPLETE STYLING
+   ======================================== */
+
+/* Product Card Container */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 30px rgba(212, 163, 115, 0.25);
+  transform: translateY(-8px);
+}
+
+/* Product Image Container */
+.product-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+/* Product Overlay */
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+/* Quick View Button */
+.quick-view-btn {
+  background: #d4a373;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.quick-view-btn:hover {
+  background: #c29660;
+  transform: scale(1.05);
+}
+
+.quick-view-btn:active {
+  transform: scale(0.98);
+}
+
+/* Product Information Section */
+.product-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Product Category Badge */
+.product-category {
+  display: inline-block;
+  background: #f5e6d3;
+  color: #d4a373;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+/* Product Name/Title */
+.product-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c2c2c;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* Product Rating Section */
+.product-rating {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+/* Star Rating */
+.stars {
+  color: #d4a373;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Number of Reviews */
+.reviews {
+  color: #999;
+}
+
+/* Product Footer (Price & Button) */
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.5rem;
+  color: #d4a373;
+  font-weight: 700;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: #d4a373;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.add-to-cart-btn:hover {
+  background: #c29660;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(212, 163, 115, 0.3);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .product-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .product-image-container {
+    height: 200px;
+  }
+
+  .product-info {
+    padding: 1.2rem;
+  }
+
+  .product-name {
+    font-size: 1.1rem;
+  }
+
+  .product-description {
+    font-size: 0.85rem;
+  }
+
+  .product-price {
+    font-size: 1.3rem;
+  }
+
+  .add-to-cart-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  .product-image-container {
+    height: 150px;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .product-description {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
